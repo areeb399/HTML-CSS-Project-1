@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Red Rose', cursive;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./image/background\ img.png");
+
+    background-size: cover ;
+    background-attachment: fixed;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    
+}
+
+.nav-list{
+    display: flex;
+    align-items:center ;
+    font-family: "Red Rose";
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    position: relative;
+    list-style: none;
+    color: #ffc233;
+}
+
+.nav-item{
+    min-width: 7rem;
+    text-align: center;
+    padding-block: 1rem;
+
+}
+
+.button-small{
+    padding: 12px 40px;
+    background-color: #ff505f;
+    border: none;
+    border-radius: 10px;
+    font-family: "Red Rose";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 20px;
+  
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+}
+.main > div > h1{
+    font-weight: 800;
+    font-family: "Red Rose";
+    color: #ffc233;
+    font-size: 55px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.button-large{
+    border: none;
+    color: #ffffff;
+    background-color: #ff505f;
+    padding: 12px 40px;
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    cursor: pointer;
+    
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /*height: 50px;
+    width: 50px;*/
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.active{
+    position: absolute;
+    bottom: -1rem;
+    height: 2px;
+    width: 10rem;
+    background-color: #ffc233;
+    transition: 0.255s;
+}
+
+.nav-item:nth-child(2):hover ~ .active{
+    transform: translateX(10rem);
+}
+
+.nav-item:nth-child(3):hover ~ .active{
+    transform: translateX(20rem);
+}
+
+.nav-item:nth-child(4):hover ~ .active{
+    transform: translateX(30rem);
+}
