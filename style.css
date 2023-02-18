@@ -104,23 +104,3 @@ body{
     bottom: 20px;
     right: 40px;
 }
-.active{
-    position: absolute;
-    bottom: -1rem;
-    height: 2px;
-    width: 10rem;
-    background-color: #ffc233;
-    transition: 0.255s;
-}
-
-.nav-item:nth-child(2):hover ~ .active{
-    transform: translateX(10rem);
-}
-
-.nav-item:nth-child(3):hover ~ .active{
-    transform: translateX(20rem);
-}
-
-.nav-item:nth-child(4):hover ~ .active{
-    transform: translateX(30rem);
-}
